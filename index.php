@@ -1,5 +1,5 @@
 <?php 
 
-  echo 'hi this is my project, thanks'
+  echo 'hi this is my project, thas';
 		
  ?>
