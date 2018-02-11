@@ -1,3 +1,4 @@
+
 <?php
 
 require ('core/bootstrap.php');
@@ -15,6 +16,6 @@ require ('core/bootstrap.php');
 
 
 
-  require Router::load("routes.php")->direct(Request::uri());
-//$router = Router::load("routes.php");
-//require $router->direct(Request::uri());
+
+  require_once Router::load($routes)->direct(Request::uri());
+
