@@ -25,10 +25,8 @@ VALUES ('".$firstname."', 'Doe', 'john@example.com')";
     // 使用 exec() ，没有结果返回
     $conn->exec($sql);
 //        echo "新记录插入成功";
-}
-catch(PDOException $e)
-{
+} catch(PDOException $e) {
 
-    echo $e->getMessage().'我是谁';
+    die($e->getMessage());
 }
 ?>

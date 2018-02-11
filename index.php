@@ -1,10 +1,20 @@
 <?php
 
-  require_once('core/routes.php');
-  require_once('core/router.php');
-  require_once('core/request.php');
+require ('core/bootstrap.php');
+//
+//  require('Guests.php');
+//  $query = require('core/bootstrap.php');
+//
+//  $myGuests = $query -> selectAll('myguests');
+//
+//  $guests = array_map(function ($guest){
+//      return 'ture it is';
+//  }, $myGuests);
+//var_dump($guests);
 
 
 
 
-  require_once Router::load($routes)->direct(Request::uri());
+  require Router::load("routes.php")->direct(Request::uri());
+//$router = Router::load("routes.php");
+//require $router->direct(Request::uri());
